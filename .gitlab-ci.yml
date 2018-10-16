@@ -1,4 +1,10 @@
 ---
+image: node:8.11.3
+
+cache:
+  paths:
+  - node_modules/
+
 stages: 
   - Build
   - Test
@@ -6,6 +12,7 @@ stages:
 Build:
   stage: Build
   script:
+    - npm install
     - npm run build
 
 Code Validation:
