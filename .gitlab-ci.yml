@@ -20,5 +20,4 @@ Code Validation:
   dependencies: 
     - Build
   script:
-  - node ./internals/scripts/generate-templates-for-linting
-  - npm test -- --maxWorkers=4
+  - npm test
