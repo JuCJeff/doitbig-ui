@@ -1,16 +1,16 @@
 {
-  "name": "react-boilerplate",
+  "name": "doitbig-ui",
   "version": "3.6.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "description": "The frontend UI of DoIT STS's scheduler",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://gitlab.com/cs506-doit-sts/doitbig-ui.git"
   },
   "engines": {
     "npm": ">=5",
     "node": ">=8"
   },
-  "author": "Max Stoiber",
+  "author": "DoIT Big",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
@@ -50,10 +50,6 @@
   "lint-staged": {
     "*.js": [
       "npm run lint:eslint:fix",
-      "git add --force"
-    ],
-    "*.json": [
-      "prettier --write",
       "git add --force"
     ]
   },
