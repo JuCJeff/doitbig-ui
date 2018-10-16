@@ -1,5 +1,4 @@
-# DoIT B1G UI
-<br />
+# DoIT B1G UI <br />
 ## Quick start
 
 1.  Make sure that you have Node v8 or above installed.
