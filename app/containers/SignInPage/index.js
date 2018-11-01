@@ -1,6 +1,7 @@
 import React from 'react';
-import './SignInForm.js';
+import SignInForm from './SignInForm';
 
+/* eslint-disable react/prefer-stateless-function */
 export default class SignInPage extends React.PureComponent {
   render() {
     return (

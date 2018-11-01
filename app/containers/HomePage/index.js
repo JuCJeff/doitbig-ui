@@ -12,12 +12,14 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-const Home = () => (
-  <h1>
-    <FormattedMessage {...messages.header} />
-  </h1>
-);
-
-export default Home;
+/* eslint-disable react/prefer-stateless-function */
+export default class HomePage extends React.PureComponent {
+  render() {
+    return (
+      <h1>
+        <FormattedMessage {...messages.header} />
+      </h1>
+    );
+  }
+}
