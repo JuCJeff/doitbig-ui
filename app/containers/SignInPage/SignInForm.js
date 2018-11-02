@@ -16,21 +16,24 @@ export default class SignInForm extends React.PureComponent {
   render() {
     return (
       <div className="box">
+        <h1 className="title_h1">STS STUDENT</h1>
+        <h4 className="title_h4"> Please sign in to your account.</h4>
+
         <form>
-          <h2>STS Student Login</h2>
-          <div className="inputBox">
-            {/* <label htmlFor="username"> */}
-            <input type="text" name="username" required="" />
-            Username
-            {/* </label> */}
+          <div className="signinRow">
+            <input type="email" placeholder="Email" />
           </div>
-          <div className="inputBox">
-            {/* <label htmlFor="password"> */}
-            <input type="password" name="password" required="" />
-            Password
-            {/* </label> */}
+          <div className="signinRow">
+            <input type="password" placeholder="Password" />
           </div>
-          <input type="submit" name="submit" value="Submit" />
+          <div className="upBtns text-center">
+            <button type="submit" className="btn-default">
+              Log in
+            </button>
+          </div>
+          <div className="agreeView">
+            <p>Already have an account? Sign up.</p>
+          </div>
         </form>
       </div>
     );
