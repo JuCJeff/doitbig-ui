@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SingInForm /> should render the page message 1`] = `
+<div
+  className="body"
+>
+  <img
+    alt="background"
+    src="IMAGE_MOCK"
+  />
+  <SignInForm />
+</div>
+`;
