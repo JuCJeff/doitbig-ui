@@ -1,0 +1,16 @@
+ul li {
+    color: black;
+}
+
+.box {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 20%;
+}
+.headerbox{
+    margin: 0;
+    padding: 0;
+    position: aboslute;
+    left: 0;
+}
