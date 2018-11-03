@@ -52,7 +52,7 @@ describe('<SignupPage />', () => {
                           </button>
                         </div>
                         <div className="agreeView">
-                          <p>Already have an account? Sign in.</p>
+                          <a href="/signup">Do not have an account? Sign up.</a>
                         </div>
                       </form>
                       <div className="lowTitle">
