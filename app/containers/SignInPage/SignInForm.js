@@ -17,7 +17,7 @@ export default class SignInForm extends React.PureComponent {
     return (
       <div className="box">
         <h1 className="title_h1">STS STUDENT</h1>
-        <h4 className="title_h4"> Please sign in to your account.</h4>
+        <h4 className="title_h4">Please sign in to your account.</h4>
 
         <form>
           <div className="signinRow">
@@ -32,7 +32,7 @@ export default class SignInForm extends React.PureComponent {
             </button>
           </div>
           <div className="agreeView">
-            <p>Already have an account? Sign up.</p>
+            <p>Do not have an account? Sign up.</p>
           </div>
         </form>
       </div>
