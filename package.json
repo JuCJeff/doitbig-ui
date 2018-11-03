@@ -115,10 +115,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "statements": 98,
-        "branches": 91,
-        "functions": 98,
-        "lines": 98
+        "statements": 80,
+        "branches": 80,
+        "functions": 80,
+        "lines": 80
       }
     },
     "moduleDirectories": [
@@ -141,6 +141,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.26.0",
+    "bootstrap": "^3.3.7",
     "chalk": "2.4.1",
     "compression": "1.7.2",
     "cross-env": "5.2.0",
@@ -152,16 +153,18 @@
     "intl": "1.2.5",
     "invariant": "2.2.4",
     "ip": "1.1.5",
+    "jquery": "^3.3.1",
     "lodash": "4.17.10",
     "minimist": "1.2.0",
     "prop-types": "15.6.1",
     "react": "16.4.1",
     "react-dom": "16.4.1",
-    "react-helmet": "5.2.0",
     "react-intl": "2.4.0",
+    "react-load-script": "0.0.6",
     "react-loadable": "5.4.0",
+    "react-motion": "^0.5.2",
     "react-redux": "5.0.7",
-    "react-router-dom": "4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-router-redux": "5.0.0-alpha.9",
     "redux": "4.0.0",
     "redux-immutable": "4.0.0",
