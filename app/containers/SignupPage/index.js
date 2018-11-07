@@ -57,7 +57,7 @@ export default class SignupPage extends React.PureComponent {
                         </button>
                       </div>
                       <div className="agreeView">
-                        <a href="/signup">Do not have an account? Sign up.</a>
+                        <a href="/signin"> Already have an account? Sign in.</a>
                       </div>
                     </form>
                     <div className="lowTitle">

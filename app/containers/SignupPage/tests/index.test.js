@@ -52,7 +52,8 @@ describe('<SignupPage />', () => {
                           </button>
                         </div>
                         <div className="agreeView">
-                          <a href="/signup">Do not have an account? Sign up.</a>
+                          {/* eslint-disable-next-line */}
+                          <a href="/signin"> Already have an account? Sign in.</a>
                         </div>
                       </form>
                       <div className="lowTitle">
