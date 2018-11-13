@@ -22,8 +22,8 @@ const styles = {
 function MediaCard(props) {
   const { classes } = props;
   return (
-    <Card className={classes.card}>
-      <CardActionArea>
+    <Card className={classes.card} align="left">
+      <CardActionArea className="cardBody">
         <CardMedia
           className={classes.media}
           image={Image}
@@ -31,9 +31,9 @@ function MediaCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            STS course 1
+            STS Track 1
           </Typography>
-          <Typography component="p">STS course 1 is a sample course</Typography>
+          <Typography component="p">STS track 1 is a sample course</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>

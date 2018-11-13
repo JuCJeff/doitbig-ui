@@ -141,6 +141,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",
+    "@material-ui/icons": "^3.0.1",
     "@material/react-button": "^0.6.2",
     "@material/react-card": "^0.6.2",
     "babel-polyfill": "6.26.0",
