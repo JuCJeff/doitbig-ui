@@ -6,10 +6,6 @@ import HomePage from '../index';
 describe('<HomePage />', () => {
   it('should render the page message', () => {
     const renderedComponent = shallow(<HomePage />);
-    expect(
-      renderedComponent.contains(
-        <p className="mini">This is the error page.</p>,
-      ),
-    ).toEqual(false);
+    expect(renderedComponent).toMatchSnapshot();
   });
 });
