@@ -1,15 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import HomePage from '../index';
+import TracksPage from '../index';
 
-describe('<HomePage />', () => {
+describe('<TracksPage />', () => {
   it('should render the page message', () => {
-    const renderedComponent = shallow(<HomePage />);
+    const renderedComponent = shallow(<TracksPage />);
     expect(
       renderedComponent.contains(
-        <p className="mini">This is the error page.</p>,
+        <div>
+          <h2>Hello World</h2>
+        </div>,
       ),
-    ).toEqual(false);
+    ).toEqual(true);
   });
 });
