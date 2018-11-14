@@ -8,26 +8,17 @@
  * reloading is not a necessity for you then you can refactor it and remove
  * the linting exception.
  */
-
+import PropTypes from 'prop-types';
 import React from 'react';
 import './index.css';
 const axios = require('axios');
-
+const qs = require('query-string');
 const server = axios.create({
   baseURL: 'http://localhost:3001',
 });
 
 /* eslint-disable react/prefer-stateless-function */
 export default class ProfilePage extends React.PureComponent {
-  // async getUser(id) {
-  //   try {
-  //     const response = await server.get(`/profile?uid=${id}`);
-  //     console.log(response.data);
-  //     return response.data;
-  //   } catch (error) {
-  //     return error;
-  //   }
-  // }
   constructor(props) {
     super(props);
     this.state = {
@@ -38,16 +29,13 @@ export default class ProfilePage extends React.PureComponent {
   }
 
   componentDidMount() {
-    server.get(`/profile?uid=12345`).then(
+    server.get(`/profile?uid=${qs.parse(this.props.location.search).uid}`).then(
       result => {
         this.setState({
           isLoaded: true,
           items: result.data,
         });
       },
-      // Note: it's important to handle errors here
-      // instead of a catch() block so that we don't swallow
-      // exceptions from actual bugs in components.
       error => {
         this.setState({
           isLoaded: true,
@@ -56,6 +44,7 @@ export default class ProfilePage extends React.PureComponent {
       },
     );
   }
+
   render() {
     const { error, isLoaded, items } = this.state;
     if (!error && isLoaded) {
@@ -131,3 +120,7 @@ export default class ProfilePage extends React.PureComponent {
     return <p>Loading...</p>;
   }
 }
+
+ProfilePage.propTypes = {
+  location: PropTypes.any,
+};
