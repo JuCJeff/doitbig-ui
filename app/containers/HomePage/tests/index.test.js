@@ -10,6 +10,6 @@ describe('<HomePage />', () => {
       renderedComponent.contains(
         <p className="mini">This is the error page.</p>,
       ),
-    ).toEqual(true);
+    ).toEqual(false);
   });
 });
