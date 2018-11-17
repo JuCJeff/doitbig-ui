@@ -10,7 +10,7 @@ describe('<TracksPage />', () => {
     const renderedComponent = shallow(<TracksPage />);
     expect(
       renderedComponent.contains(
-        <div>
+        <div className="body">
           <div className="banner">
             <img src={TrackImage1} width="100%" alt="banner" />
           </div>
