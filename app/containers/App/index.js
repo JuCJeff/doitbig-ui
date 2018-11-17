@@ -19,6 +19,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import SignInPage from 'containers/SignInPage/Loadable';
 import SignupPage from '../SignupPage';
 import ProfilePage from '../ProfilePage';
+import TracksPage from '../TracksPage';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route exact path="/signin" component={SignInPage} />
         <Route exact path="/signup" component={SignupPage} />
         <Route exact path="/profile" component={ProfilePage} />
+        <Route exact path="/tracks" component={TracksPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
