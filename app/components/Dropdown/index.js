@@ -9,9 +9,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import { withStyles } from '@material-ui/core/styles';
 import { Avatar } from '@material-ui/core';
-import { Face } from '@material-ui/icons/Face';
-import { Settings } from '@material-ui/icons/Settings';
-import { Input } from '@material-ui/icons/Input';
+import { Face, Settings, Input } from '@material-ui/icons';
 import Donald from '../../images/Donald.png';
 
 const styles = theme => ({
