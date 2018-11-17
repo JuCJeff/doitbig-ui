@@ -11,12 +11,14 @@
 
 import React from 'react';
 import './index.css';
+import NavigationBar from '../../components/NavigationBar/index';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class ProfilePage extends React.PureComponent {
   render() {
     return (
       <div className="box">
+        <NavigationBar />
         <h1>Profile</h1>
         <img
           /* eslint-disable global-require */
