@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import HomePage from '../index';
+import NavigationBar from '../../../components/NavigationBar/index';
 
 describe('<HomePage />', () => {
   it('should render the page message', () => {
@@ -9,6 +10,7 @@ describe('<HomePage />', () => {
     expect(
       renderedComponent.contains(
         <div className="box">
+          <NavigationBar />
           <h1>Profile</h1>
           <img
             /* eslint-disable global-require */
