@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -19,6 +20,10 @@ const styles = {
   },
 };
 
+const server = axios.create({
+  baseURL: 'http://localhost:3001',
+});
+
 function MediaCard(props) {
   const { classes } = props;
   return (
@@ -37,7 +42,7 @@ function MediaCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" onClick={() => enroll(12345, 123)}>
           Sign Up
         </Button>
         <Button size="small" color="primary">
@@ -46,6 +51,11 @@ function MediaCard(props) {
       </CardActions>
     </Card>
   );
+}
+
+function enroll(uid, cid) {
+  console.log('woah, you clicked me!, ', uid, ' ', cid);
+  server.post(`/enroll?uid=${uid}&cid=${cid}`);
 }
 
 MediaCard.propTypes = {
