@@ -8,7 +8,7 @@ import './style.css';
 export default class TracksPage extends React.PureComponent {
   render() {
     return (
-      <div>
+      <div className="body">
         <div className="banner">
           <img src={TrackImage1} width="100%" alt="banner" />
         </div>

@@ -7,3 +7,11 @@ ul li {
 	list-style: none;
 	padding: 10px 20px;
 }
+
+.body {
+	background: #262626;
+}
+
+h1 {
+	color: #fff;
+}
