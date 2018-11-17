@@ -9,7 +9,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import { withStyles } from '@material-ui/core/styles';
 import { Avatar } from '@material-ui/core';
-import SvgIcon from '@material-ui/core/SvgIcon';
+import { Face } from '@material-ui/icons/Face';
+import { Settings } from '@material-ui/icons/Settings';
+import { Input } from '@material-ui/icons/Input';
 import Donald from '../../images/Donald.png';
 
 const styles = theme => ({
@@ -69,13 +71,13 @@ class MenuListComposition extends React.Component {
                   <ClickAwayListener onClickAway={this.handleClose}>
                     <MenuList>
                       <MenuItem onClick={this.handleClose}>
-                        <SvgIcon>face</SvgIcon>Profile
+                        <Face />Profile
                       </MenuItem>
                       <MenuItem onClick={this.handleClose}>
-                        <SvgIcon>setting</SvgIcon>Setting
+                        <Settings />Setting
                       </MenuItem>
                       <MenuItem onClick={this.handleClose}>
-                        <SvgIcon>exit_to_app</SvgIcon>Logout
+                        <Input /> Logout
                       </MenuItem>
                     </MenuList>
                   </ClickAwayListener>
