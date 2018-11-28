@@ -44,7 +44,9 @@ function ButtonAppBar(props) {
               <Avatar src={STS} />Software Training for Students
             </Button>
           </Typography>
-          <Button color="inherit">Tracks</Button>
+          <Button href="/tracks" color="inherit">
+            Tracks
+          </Button>
           <Button color="inherit">Courses</Button>
           <MenuListComposition />
         </Toolbar>
