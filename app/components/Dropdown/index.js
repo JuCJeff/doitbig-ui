@@ -68,15 +68,21 @@ class MenuListComposition extends React.Component {
                 <Paper>
                   <ClickAwayListener onClickAway={this.handleClose}>
                     <MenuList>
-                      <MenuItem onClick={this.handleClose}>
-                        <Face />Profile
-                      </MenuItem>
-                      <MenuItem onClick={this.handleClose}>
-                        <Settings />Setting
-                      </MenuItem>
-                      <MenuItem onClick={this.handleClose}>
-                        <Input /> Logout
-                      </MenuItem>
+                      <a href="/profile" style={{ textDecoration: 'none' }}>
+                        <MenuItem onClick={this.handleClose}>
+                          <Face /> Profile
+                        </MenuItem>
+                      </a>
+                      <a href="/profile" style={{ textDecoration: 'none' }}>
+                        <MenuItem onClick={this.handleClose}>
+                          <Settings /> Setting
+                        </MenuItem>
+                      </a>
+                      <a href="/signin" style={{ textDecoration: 'none' }}>
+                        <MenuItem onClick={this.handleClose}>
+                          <Input /> Logout
+                        </MenuItem>
+                      </a>
                     </MenuList>
                   </ClickAwayListener>
                 </Paper>

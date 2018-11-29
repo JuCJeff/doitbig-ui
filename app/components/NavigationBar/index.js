@@ -40,12 +40,16 @@ function ButtonAppBar(props) {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            <Button color="inherit">
+            <Button href="/" color="inherit">
               <Avatar src={STS} />Software Training for Students
             </Button>
           </Typography>
-          <Button color="inherit">Tracks</Button>
-          <Button color="inherit">Courses</Button>
+          <Button href="/" color="inherit">
+            Tracks
+          </Button>
+          <Button href="/" color="inherit">
+            Courses
+          </Button>
           <MenuListComposition />
         </Toolbar>
       </AppBar>
