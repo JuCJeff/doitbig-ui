@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Paper from '@material-ui/core/Paper';
+import { Link } from 'react-router-dom';
 import Popper from '@material-ui/core/Popper';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
@@ -68,13 +69,21 @@ class MenuListComposition extends React.Component {
                 <Paper>
                   <ClickAwayListener onClickAway={this.handleClose}>
                     <MenuList>
-                      <MenuItem onClick={this.handleClose}>
-                        <Face />Profile
+                      <MenuItem
+                        component={Link}
+                        to="/profile?uid=12345"
+                        onClick={this.handleClose}
+                      >
+                        <Face /> Profile
                       </MenuItem>
                       <MenuItem onClick={this.handleClose}>
                         <Settings />Setting
                       </MenuItem>
-                      <MenuItem onClick={this.handleClose}>
+                      <MenuItem
+                        component={Link}
+                        to="/signin"
+                        onClick={this.handleClose}
+                      >
                         <Input /> Logout
                       </MenuItem>
                     </MenuList>
