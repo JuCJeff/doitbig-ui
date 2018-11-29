@@ -44,12 +44,10 @@ function ButtonAppBar(props) {
               <Avatar src={STS} />Software Training for Students
             </Button>
           </Typography>
-          <Button href="/" color="inherit">
+          <Button href="/tracks" color="inherit">
             Tracks
           </Button>
-          <Button href="/" color="inherit">
-            Courses
-          </Button>
+          <Button color="inherit">Courses</Button>
           <MenuListComposition />
         </Toolbar>
       </AppBar>

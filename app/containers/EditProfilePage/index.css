@@ -1,0 +1,37 @@
+/* img {
+	position: absolute;
+	top: 0;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+} */
+
+.signinCont .col-lg-6 {
+	width: 50%;
+	top: 0;
+	bottom: 0;
+	float: left;
+	padding: 0;
+	background-color: #fff;
+	height: 780px;
+	position: relative;
+}
+
+.signinCont .col-lg-6 img {
+    width: 100%;
+    height: 800px;
+    top: 0;
+    bottom: 0;
+    display: block;
+}
+
+.signin {
+    width: 450px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1230px) {
+    .contentView {width: 1230px};
+    .container {width: 100%};
+}
