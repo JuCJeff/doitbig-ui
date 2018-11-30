@@ -54,7 +54,6 @@ function MediaCard(props) {
 }
 
 function enroll(uid, cid) {
-  console.log('woah, you clicked me!, ', uid, ' ', cid);
   server.post(`/enroll?uid=${uid}&cid=${cid}`);
 }
 
