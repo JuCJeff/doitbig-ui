@@ -71,12 +71,16 @@ class MenuListComposition extends React.Component {
                     <MenuList>
                       <MenuItem
                         component={Link}
-                        to="/profile?uid=12345"
+                        to="/profile"
                         onClick={this.handleClose}
                       >
                         <Face /> Profile
                       </MenuItem>
-                      <MenuItem onClick={this.handleClose}>
+                      <MenuItem
+                        component={Link}
+                        to="/update"
+                        onClick={this.handleClose}
+                      >
                         <Settings />Setting
                       </MenuItem>
                       <MenuItem
