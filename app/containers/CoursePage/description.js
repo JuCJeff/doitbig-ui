@@ -20,7 +20,7 @@ function PaperSheet(props) {
     <div>
       <Paper className={classes.root} elevation={1}>
         <Typography variant="h5" component="h3">
-          This is a sheet of paper.
+          This is a Wordpress Course.
         </Typography>
         <img src={Image} className="images" alt="banner" />
         <Typography component="p">

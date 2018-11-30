@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import School from '@material-ui/icons/School';
+import Navigation from '../../components/NavigationBar/index';
 import TrackImage1 from '../../images/STS-Banner.jpg';
 import './style.css';
 
@@ -9,6 +10,7 @@ export default class TracksPage extends React.PureComponent {
   render() {
     return (
       <div className="body">
+        <Navigation />
         <div className="banner">
           <img src={TrackImage1} width="100%" alt="banner" />
         </div>
