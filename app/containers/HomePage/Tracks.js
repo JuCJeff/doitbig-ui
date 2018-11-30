@@ -20,7 +20,7 @@ const styles = {
 };
 
 function MediaCard(props) {
-  const { classes } = props;
+  const { classes, name, des } = props;
   return (
     <Card className={classes.card} align="left">
       <CardActionArea className="cardBody">
@@ -31,9 +31,9 @@ function MediaCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            STS Track 1
+            {name}
           </Typography>
-          <Typography component="p">STS track 1 is a sample course</Typography>
+          <Typography component="p">{des}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
@@ -50,6 +50,8 @@ function MediaCard(props) {
 
 MediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  des: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles)(MediaCard);
