@@ -22,6 +22,7 @@ import ProfilePage from '../ProfilePage';
 import TracksPage from '../TracksPage';
 import UpdatePage from '../EditProfilePage/Loadable';
 import CoursePage from '../CoursePage/Loadable';
+import CoursesPage from '../CoursesPage/Loadable';
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         <Route exact path="/signup" component={SignupPage} />
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/course" component={CoursePage} />
+        <Route exact path="/courses" component={CoursesPage} />
         <Route exact path="/tracks" component={TracksPage} />
         <Route exact path="/update" component={UpdatePage} />
         <Route component={NotFoundPage} />
