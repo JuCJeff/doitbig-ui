@@ -10,17 +10,20 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-
-import messages from './messages';
+import './index.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class NotFound extends React.PureComponent {
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <div className="box">
+        <p className="mega">
+          4
+          <span className="boom">0</span>4
+          <div className="bola" />
+        </p>
+        <p className="mini">This is the error page.</p>
+      </div>
     );
   }
 }

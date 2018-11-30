@@ -1,16 +1,17 @@
-ul li {
-    color: black;
+.body {
+    color: white;
+    background: #333;
 }
 
-.box {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 20%;
+.images {
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    padding: 1em;
+    border-radius: 50px;
+    display: inline-block;
 }
-.headerbox{
-    margin: 0;
-    padding: 0;
-    position: aboslute;
-    left: 0;
+
+.personalProfile {
+    display: inline-block;
 }

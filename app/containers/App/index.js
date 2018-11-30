@@ -16,14 +16,24 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import ProfilePage from 'containers/ProfilePage';
+import SignInPage from 'containers/SignInPage/Loadable';
+import SignupPage from '../SignupPage';
+import ProfilePage from '../ProfilePage';
+import TracksPage from '../TracksPage';
+import UpdatePage from '../EditProfilePage/Loadable';
+import CoursePage from '../CoursePage/Loadable';
 
 export default function App() {
   return (
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/signin" component={SignInPage} />
+        <Route exact path="/signup" component={SignupPage} />
         <Route exact path="/profile" component={ProfilePage} />
+        <Route exact path="/course" component={CoursePage} />
+        <Route exact path="/tracks" component={TracksPage} />
+        <Route exact path="/update" component={UpdatePage} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

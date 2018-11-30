@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SingInForm /> should render the page message 1`] = `
+<div>
+  <div
+    className="contentView"
+  >
+    <div
+      className="signinView"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="clearfix signinCont"
+        >
+          <div
+            className="col-lg-6"
+          >
+            <img
+              alt="background"
+              src="IMAGE_MOCK"
+            />
+          </div>
+          <div
+            className="col-lg-6"
+          >
+            <div
+              className="signin"
+            >
+              <SignInForm />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

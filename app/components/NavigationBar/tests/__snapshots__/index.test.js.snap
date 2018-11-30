@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationBar /> should render the page message 1`] = `
+<ButtonAppBar
+  classes={
+    Object {
+      "grow": "ButtonAppBar-grow-2",
+      "menuButton": "ButtonAppBar-menuButton-3",
+      "root": "ButtonAppBar-root-1",
+    }
+  }
+/>
+`;

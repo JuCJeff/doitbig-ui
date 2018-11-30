@@ -7,6 +7,24 @@
 4.  Run `npm install` in order to install dependencies and clean the git repo.<br />
 5.  At this point you can run `npm start` to see the app at `http://localhost:3000`.
 
+## Routes
+
+Currently we have the following pages active:
+- http://localhost:3000/
+- http://localhost:3000/profile
+- http://localhost:3000/signin
+- http://localhost:3000/signup
+- http://localhost:3000/tracks
+- http://localhost:3000/courses
+- http://localhost:3000/course
+- http://localhost:3000/update
+
+## Testing
+
+To run the automated Jest tests simply run: 
+
+    $ npm test
+
 ## License
 
 This project is licensed under the MIT license, Copyright (c) 2018 DoIT Big. For more information see `LICENSE.md`.
