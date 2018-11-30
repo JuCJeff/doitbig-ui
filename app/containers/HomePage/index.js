@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 // import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
@@ -11,8 +12,17 @@ import Typography from '@material-ui/core/Typography';
 import Image from '../../images/STS-Banner.jpg';
 import NavigationBar from '../../components/NavigationBar/index';
 // import Tracks from './Tracks';
-import Courses from './Courses';
+// import Courses from './Courses';
 import './style.css';
+
+const server = axios.create({
+  baseURL: 'http://localhost:3001',
+});
+
+function enroll(uid, cid) {
+  console.log('woah, you clicked me!, ', uid, ' ', cid);
+  server.post(`/enroll?uid=${uid}&cid=${cid}`);
+}
 
 export default class HomePage extends React.PureComponent {
   constructor(props) {
@@ -29,7 +39,7 @@ export default class HomePage extends React.PureComponent {
       course_2: '1',
       course_2_des: '1',
       course_3: '1',
-      course_3_des: 'courseThreeDes',
+      course_3_des: '1',
     };
   }
 
@@ -85,22 +95,38 @@ export default class HomePage extends React.PureComponent {
     );
   }
 
+  course(courseName, courseDes) {
+    return (
+      <Card className="hi">
+        <CardActionArea>
+          <CardMedia className="hi" image={Image} title="STS sample course" />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {courseName}
+            </Typography>
+            <Typography component="p">{courseDes}</Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button
+            size="small"
+            color="primary"
+            onClick={() => enroll(12345, 123)}
+          >
+            Sign Up
+          </Button>
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
+        </CardActions>
+      </Card>
+    );
+  }
+
   render() {
     this.hello();
     return (
       <div>
-        {this.state.track_1}
-        {this.state.track_2}
-        {this.state.track_3}
-        {this.state.track_1_des}
-        {this.state.track_2_des}
-        {this.state.track_3_des}
-        {this.state.course_1}
-        {this.state.course_2}
-        {this.state.course_3}
-        {this.state.course_1_des}
-        {this.state.course_2_des}
-        {this.state.course_3_des}
         <div>
           <NavigationBar />
         </div>
@@ -119,13 +145,13 @@ export default class HomePage extends React.PureComponent {
 
         <Grid container spacing={24}>
           <Grid item xs={12}>
-            <Courses />
+            {this.course(this.state.course_1, this.state.course_1_des)}
           </Grid>
           <Grid item xs={12}>
-            <Courses />
+            {this.course(this.state.course_2, this.state.course_2_des)}
           </Grid>
           <Grid item xs={12}>
-            <Courses />
+            {this.course(this.state.course_3, this.state.course_3_des)}
           </Grid>
         </Grid>
       </div>
