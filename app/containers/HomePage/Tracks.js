@@ -8,11 +8,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Image from '../../images/STS-Banner.jpg';
+import Track1 from '../../images/track-1.png';
 
 const styles = {
   card: {
     maxWidth: 345,
+    margin: 20,
   },
   media: {
     height: 140,
@@ -26,7 +27,7 @@ function MediaCard(props) {
       <CardActionArea className="cardBody">
         <CardMedia
           className={classes.media}
-          image={Image}
+          image={Track1}
           title="STS sample course"
         />
         <CardContent>

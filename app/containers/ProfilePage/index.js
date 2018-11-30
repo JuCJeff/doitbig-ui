@@ -54,7 +54,7 @@ export default class ProfilePage extends React.PureComponent {
       return (
         <div className="body">
           <NavigationBar />
-          <img src={Image} alt="profile" width="150px" className="images" />
+          <img src={Image} alt="profile" width="150px" className="profile" />
 
           <ul>
             <li>First Name: {items.FirstName}</li>
