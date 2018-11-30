@@ -60,13 +60,13 @@ export default class HomePage extends React.PureComponent {
 
           <Grid container spacing={24}>
             <Grid item xs={12}>
-              <Courses />
+              <Courses name={data.course_1} des={data.course_1_des} />
             </Grid>
             <Grid item xs={12}>
-              <Courses />
+              <Courses name={data.course_2} des={data.course_2_des} />
             </Grid>
             <Grid item xs={12}>
-              <Courses />
+              <Courses name={data.course_3} des={data.course_3_des} />
             </Grid>
           </Grid>
         </div>
