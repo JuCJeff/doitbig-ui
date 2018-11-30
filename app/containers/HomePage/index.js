@@ -1,11 +1,17 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
-
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import Image from '../../images/STS-Banner.jpg';
 import NavigationBar from '../../components/NavigationBar/index';
-import Tracks from './Tracks';
+// import Tracks from './Tracks';
 import Courses from './Courses';
-import Image from '../../images/STS.jpg';
 import './style.css';
 
 export default class HomePage extends React.PureComponent {
@@ -55,6 +61,30 @@ export default class HomePage extends React.PureComponent {
       });
   }
 
+  track(trackName, trackDes) {
+    return (
+      <Card className="hi" align="left">
+        <CardActionArea className="cardBody">
+          <CardMedia className="hi" image={Image} title="STS sample course" />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {trackName}
+            </Typography>
+            <Typography component="p">{trackDes}</Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Sign Up
+          </Button>
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
+        </CardActions>
+      </Card>
+    );
+  }
+
   render() {
     this.hello();
     return (
@@ -77,13 +107,13 @@ export default class HomePage extends React.PureComponent {
         <img src={Image} className="images" alt="banner" />
         <Grid container spacing={24} align="center">
           <Grid item sm={4}>
-            <Tracks />
+            {this.track(this.state.track_1, this.state.track_1_des)}
           </Grid>
           <Grid item sm={4}>
-            <Tracks />
+            {this.track(this.state.track_2, this.state.track_2_des)}
           </Grid>
           <Grid item sm={4}>
-            <Tracks />
+            {this.track(this.state.track_3, this.state.track_3_des)}
           </Grid>
         </Grid>
 
