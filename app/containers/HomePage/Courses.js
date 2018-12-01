@@ -25,7 +25,7 @@ const server = axios.create({
 });
 
 function MediaCard(props) {
-  const { classes } = props;
+  const { classes, name, des } = props;
   return (
     <Card className={classes.card}>
       <CardActionArea>
@@ -36,9 +36,9 @@ function MediaCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            STS Course 1
+            {name}
           </Typography>
-          <Typography component="p">STS course 1 is a sample course</Typography>
+          <Typography component="p">{des}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
@@ -59,6 +59,8 @@ function enroll(uid, cid) {
 
 MediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  des: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles)(MediaCard);

@@ -21,6 +21,7 @@ import SignupPage from '../SignupPage';
 import ProfilePage from '../ProfilePage';
 import TracksPage from '../TracksPage';
 import UpdatePage from '../EditProfilePage/Loadable';
+import CoursePage from '../CoursePage/Loadable';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route exact path="/signin" component={SignInPage} />
         <Route exact path="/signup" component={SignupPage} />
         <Route exact path="/profile" component={ProfilePage} />
+        <Route exact path="/course" component={CoursePage} />
         <Route exact path="/tracks" component={TracksPage} />
         <Route exact path="/update" component={UpdatePage} />
         <Route component={NotFoundPage} />
