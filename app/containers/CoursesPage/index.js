@@ -1,88 +1,66 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-// import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import ListItemText from '@material-ui/core/ListItemText';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
-import FolderIcon from '@material-ui/icons/Folder';
-// import PlayArrow from '@material-ui/icons/PlayArrow';
 import NavigationBar from '../../components/NavigationBar/index';
+import Courses from './courses';
 
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-    maxWidth: 752,
-  },
-  demo: {
-    backgroundColor: theme.palette.background.paper,
-  },
-  title: {
-    margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
-  },
+const axios = require('axios');
+const server = axios.create({
+  baseURL: 'http://localhost:3001',
 });
 
-function generate(element) {
-  return [0, 1, 2, 3, 4, 5].map(value =>
-    React.cloneElement(element, {
-      key: value,
-    }),
-  );
-}
+export default class CoursesPage extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      data: [],
+    };
+  }
 
-class InteractiveList extends React.Component {
-  state = {
-    dense: false,
-  };
+  componentDidMount() {
+    server.get(`/courses`).then(
+      result => {
+        this.setState({
+          isLoaded: true,
+          data: result.data,
+        });
+      },
+      error => {
+        this.setState({
+          isLoaded: true,
+          error,
+        });
+      },
+    );
+  }
 
   render() {
-    const { classes } = this.props;
-    const { dense } = this.state;
-
-    return (
-      <div className={classes.root}>
-        <h1 className="title_h1">STS CoursePage</h1>
+    const { error, isLoaded, data } = this.state;
+    if (!error && isLoaded) {
+      return (
         <div>
-          <NavigationBar />
-        </div>
-        <Grid container spacing={16}>
-          <Grid item xs={12} md={6}>
-            <div className={classes.demo}>
-              <List dense={dense}>
-                {generate(
-                  <ListItem>
-                    <ListItemAvatar>
-                      <Avatar>
-                        <FolderIcon />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                      primary="Course Names"
-                      secondary="This is the description"
-                    />
-                    <ListItemSecondaryAction>
-                      <IconButton aria-label="Play">
-                        {/* <PlayArrowIcon /> */}
-                      </IconButton>
-                    </ListItemSecondaryAction>
-                  </ListItem>,
-                )}
-              </List>
-            </div>
+          <div>
+            <NavigationBar />
+          </div>
+          <Grid container spacing={24}>
+            <Grid item xs={12}>
+              <Courses name={data.course_1} des={data.course_1_des} />
+            </Grid>
+            <Grid item xs={12}>
+              <Courses name={data.course_2} des={data.course_2_des} />
+            </Grid>
+            <Grid item xs={12}>
+              <Courses name={data.course_3} des={data.course_3_des} />
+            </Grid>
           </Grid>
-        </Grid>
+        </div>
+      );
+    }
+    return (
+      <div>
+        <NavigationBar />
       </div>
     );
   }
 }
-
-InteractiveList.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(InteractiveList);
