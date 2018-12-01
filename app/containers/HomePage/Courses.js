@@ -9,11 +9,13 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Image from '../../images/STS-Banner.jpg';
+import Course from '../../images/Excel.png';
+// import Image from '../../images/STS-Banner.jpg';
 
 const styles = {
   card: {
     width: 690,
+    margin: 20,
   },
   media: {
     height: 140,
@@ -25,20 +27,20 @@ const server = axios.create({
 });
 
 function MediaCard(props) {
-  const { classes } = props;
+  const { classes, name, des } = props;
   return (
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={Image}
+          image={Course}
           title="STS sample course"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            STS Course 1
+            {name}
           </Typography>
-          <Typography component="p">STS course 1 is a sample course</Typography>
+          <Typography component="p">{des}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
@@ -59,6 +61,8 @@ function enroll(uid, cid) {
 
 MediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  des: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles)(MediaCard);

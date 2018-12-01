@@ -1,12 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HomePage /> should render the page message 1`] = `
-<HomePage
-  classes={
-    Object {
-      "root": "HomePage-root-1",
-      "tracks": "HomePage-tracks-2",
-    }
-  }
-/>
+<div>
+  <div>
+    <WithStyles(ButtonAppBar) />
+  </div>
+  <img
+    alt="banner"
+    className="images"
+    src="IMAGE_MOCK"
+  />
+  <WithStyles(Grid)
+    align="center"
+    container={true}
+    spacing={24}
+  >
+    <WithStyles(Grid)
+      item={true}
+      sm={4}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      sm={4}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      sm={4}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    container={true}
+    spacing={24}
+  >
+    <WithStyles(Grid)
+      item={true}
+      xs={12}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={12}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={12}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
+  <div>
+    <WithStyles(SimpleAppBar) />
+  </div>
+</div>
 `;
