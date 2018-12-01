@@ -19,6 +19,7 @@ import NavigationBar from '../../components/NavigationBar/index';
 import Tracks from './Tracks';
 import Courses from './Courses';
 import Image from '../../images/STS.jpg';
+import Footer from '../../components/Footer';
 import './style.css';
 
 const styles = theme => ({
@@ -77,6 +78,9 @@ function HomePage(props) {
           <Courses />
         </Grid>
       </Grid>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
