@@ -76,7 +76,11 @@ class MenuListComposition extends React.Component {
                       >
                         <Face /> Profile
                       </MenuItem>
-                      <MenuItem onClick={this.handleClose}>
+                      <MenuItem
+                        component={Link}
+                        to="/update"
+                        onClick={this.handleClose}
+                      >
                         <Settings />Setting
                       </MenuItem>
                       <MenuItem

@@ -11,12 +11,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const styles = {
-  card: {
-    width: 690,
-    margin: 20,
-  },
   media: {
-    height: 350,
+    height: 500,
   },
 };
 
@@ -45,7 +41,7 @@ function MediaCard(props) {
         <Button size="small" color="primary" onClick={() => enroll(12345, 123)}>
           Sign Up
         </Button>
-        <Button size="small" href="/courses" color="primary">
+        <Button size="small" color="primary">
           Learn More
         </Button>
       </CardActions>

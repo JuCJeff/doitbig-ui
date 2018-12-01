@@ -60,11 +60,10 @@ Currently we have the following pages active:
 - http://localhost:3000/profile
 - http://localhost:3000/login
 - http://localhost:3000/signup
-- http://localhost:3000/signout
-- http://localhost:3000/track
+- http://localhost:3000/tracks
+- http://localhost:3000/courses
 - http://localhost:3000/course
 - http://localhost:3000/update
-- http://localhost:3000/enroll
 
 ## Testing
 

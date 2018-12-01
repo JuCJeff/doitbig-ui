@@ -47,7 +47,9 @@ function ButtonAppBar(props) {
           <Button href="/tracks" color="inherit">
             Tracks
           </Button>
-          <Button color="inherit">Courses</Button>
+          <Button href="/courses" color="inherit">
+            Courses
+          </Button>
           <MenuListComposition />
         </Toolbar>
       </AppBar>
