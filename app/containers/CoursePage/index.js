@@ -6,7 +6,7 @@ import NavigationBar from '../../components/NavigationBar/loadable';
 import Image from '../../images/STS.jpg';
 
 /* eslint-disable react/prefer-stateless-function */
-export default class NotFound extends React.PureComponent {
+export default class CoursePage extends React.PureComponent {
   render() {
     return (
       <div>
