@@ -63,8 +63,8 @@ export default class ProfilePage extends React.PureComponent {
           </ul>
 
           <ul className="courses">
-            <li># of Courses Taken:</li>
-            <li># of Courses Taken:</li>
+            <li># of Courses Taken: 3</li>
+            <li># of Tracks Taken: 1</li>
             <li>Upcoming course:</li>
           </ul>
         </div>

@@ -67,7 +67,7 @@ export default class HomePage extends React.PureComponent {
             </Grid>
           </Grid>
 
-          <Grid container spacing={24}>
+          <Grid container align="center" spacing={24}>
             <Grid item xs={12}>
               <Courses
                 name={data.course_1}
@@ -102,29 +102,7 @@ export default class HomePage extends React.PureComponent {
           <NavigationBar />
         </div>
         <img src={Image} className="images" alt="banner" />
-        <Grid container spacing={24} align="center">
-          <Grid item sm={4}>
-            <Tracks />
-          </Grid>
-          <Grid item sm={4}>
-            <Tracks />
-          </Grid>
-          <Grid item sm={4}>
-            <Tracks />
-          </Grid>
-        </Grid>
-
-        <Grid container spacing={24}>
-          <Grid item xs={12}>
-            <Courses />
-          </Grid>
-          <Grid item xs={12}>
-            <Courses />
-          </Grid>
-          <Grid item xs={12}>
-            <Courses />
-          </Grid>
-        </Grid>
+        <br />
         <div>
           <Footer />
         </div>
