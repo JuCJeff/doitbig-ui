@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import School from '@material-ui/icons/School';
 import TrackImage1 from '../../../images/STS-Banner.jpg';
 import TracksPage from '../index';
+import Navigation from '../../../components/NavigationBar/index';
 
 describe('<TracksPage />', () => {
   it('should render the page message', () => {
@@ -11,6 +12,7 @@ describe('<TracksPage />', () => {
     expect(
       renderedComponent.contains(
         <div className="body">
+          <Navigation />
           <div className="banner">
             <img src={TrackImage1} width="100%" alt="banner" />
           </div>
