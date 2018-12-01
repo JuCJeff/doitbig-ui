@@ -16,7 +16,7 @@ const styles = {
     margin: 20,
   },
   media: {
-    height: 140,
+    height: 350,
   },
 };
 
