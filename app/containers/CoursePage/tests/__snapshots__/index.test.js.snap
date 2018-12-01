@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CoursePage /> should render the page message 1`] = `
+<div>
+  <div>
+    <LoadableComponent />
+  </div>
+  <img
+    alt="banner"
+    className="images"
+    src="IMAGE_MOCK"
+  />
+  <div
+    className="description"
+  >
+    <WithStyles(PaperSheet) />
+  </div>
+  <WithStyles(ImageAvatars) />
+</div>
+`;
