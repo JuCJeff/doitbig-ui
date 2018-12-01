@@ -2,6 +2,63 @@
 
 exports[`<HomePage /> should render the page message 1`] = `
 <div>
-  <WithStyles(ButtonAppBar) />
+  <div>
+    <WithStyles(ButtonAppBar) />
+  </div>
+  <img
+    alt="banner"
+    className="images"
+    src="IMAGE_MOCK"
+  />
+  <WithStyles(Grid)
+    align="center"
+    container={true}
+    spacing={24}
+  >
+    <WithStyles(Grid)
+      item={true}
+      sm={4}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      sm={4}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      sm={4}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
+  <WithStyles(Grid)
+    container={true}
+    spacing={24}
+  >
+    <WithStyles(Grid)
+      item={true}
+      xs={12}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={12}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={12}
+    >
+      <WithStyles(MediaCard) />
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
+  <div>
+    <WithStyles(SimpleAppBar) />
+  </div>
 </div>
 `;

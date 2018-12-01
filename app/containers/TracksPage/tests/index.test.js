@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import TrackImage1 from '../../../images/STS-Banner.jpg';
-import NavigationBar from '../../../components/NavigationBar/index';
 import TracksPage from '../index';
 import Navigation from '../../../components/NavigationBar/index';
 

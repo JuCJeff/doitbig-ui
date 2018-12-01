@@ -1,9 +1,6 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import School from '@material-ui/icons/School';
 import Navigation from '../../components/NavigationBar/index';
 import TrackImage1 from '../../images/STS-Banner.jpg';
-import NavigationBar from '../../components/NavigationBar/index';
 import './style.css';
 import './iconstyle.css';
 
