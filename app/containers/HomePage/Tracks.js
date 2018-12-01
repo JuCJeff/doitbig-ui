@@ -37,10 +37,7 @@ function MediaCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Sign Up
-        </Button>
-        <Button size="small" color="primary">
+        <Button size="small" href="/tracks" color="primary">
           Learn More
         </Button>
       </CardActions>

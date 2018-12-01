@@ -45,7 +45,7 @@ function MediaCard(props) {
         <Button size="small" color="primary" onClick={() => enroll(12345, 123)}>
           Sign Up
         </Button>
-        <Button size="small" color="primary">
+        <Button size="small" href="/courses" color="primary">
           Learn More
         </Button>
       </CardActions>
