@@ -6,6 +6,15 @@ This project is an  WebApp version for the DoIt B1G training services. This app 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+## Installing
+
+1.  Make sure that you have Node v8 or above installed.
+2.  Clone this repo using `git clone git@gitlab.com:cs506-doit-sts/doitbig-ui.git`
+3.  Move to the appropriate directory: `cd doitbig-ui`.<br />
+4.  Run `npm install` in order to install dependencies and clean the git repo.<br />
+5.  At this point you can run `npm start` to see the app at `http://localhost:3000`
+
+
 ## Backend Interaction 
 
 What things you need to install the software and how to install them 
@@ -39,14 +48,9 @@ Windows:
 3. Buffalo can be installed using the Scoop package manager:
     PS C:\> scoop install buffalo
 
+After the above steps, to achieve the front-end and back-end interaction, run the following command in terminal:
+    sudo buffalo dev
 
-## Installing
-
-1.  Make sure that you have Node v8 or above installed.
-2.  Clone this repo using `git clone git@gitlab.com:cs506-doit-sts/doitbig-ui.git`
-3.  Move to the appropriate directory: `cd doitbig-ui`.<br />
-4.  Run `npm install` in order to install dependencies and clean the git repo.<br />
-5.  At this point you can run `npm start` to see the app at `http://localhost:3000`
 
 ## Routes
 
