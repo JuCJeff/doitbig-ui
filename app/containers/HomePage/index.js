@@ -4,6 +4,8 @@ import Image from '../../images/STS-Banner.jpg';
 import NavigationBar from '../../components/NavigationBar/index';
 import Tracks from './Tracks';
 import Courses from './Courses';
+import Image from '../../images/STS.jpg';
+import Footer from '../../components/Footer';
 import './style.css';
 const axios = require('axios');
 const server = axios.create({
@@ -76,6 +78,33 @@ export default class HomePage extends React.PureComponent {
       <div>
         <NavigationBar />
       </div>
-    );
-  }
+      <img src={Image} className="images" alt="banner" />
+      <Grid container spacing={24} align="center">
+        <Grid item sm={4}>
+          <Tracks />
+        </Grid>
+        <Grid item sm={4}>
+          <Tracks />
+        </Grid>
+        <Grid item sm={4}>
+          <Tracks />
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={24}>
+        <Grid item xs={12}>
+          <Courses />
+        </Grid>
+        <Grid item xs={12}>
+          <Courses />
+        </Grid>
+        <Grid item xs={12}>
+          <Courses />
+        </Grid>
+      </Grid>
+      <div>
+        <Footer />
+      </div>
+    </div>
+  );
 }
