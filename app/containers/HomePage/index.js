@@ -70,6 +70,9 @@ export default class HomePage extends React.PureComponent {
               <Courses name={data.course_3} des={data.course_3_des} />
             </Grid>
           </Grid>
+          <div>
+            <Footer />
+          </div>
         </div>
       );
     }
