@@ -9,7 +9,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Image from '../../images/STS-Banner.jpg';
 
 const styles = {
   media: {
@@ -22,13 +21,13 @@ const server = axios.create({
 });
 
 function MediaCard(props) {
-  const { classes, name, des } = props;
+  const { classes, name, des, img } = props;
   return (
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={Image}
+          image={img}
           title="STS sample course"
         />
         <CardContent>
@@ -58,6 +57,7 @@ MediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   des: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles)(MediaCard);
