@@ -48,9 +48,10 @@ Windows:
 3. Buffalo can be installed using the Scoop package manager:
     PS C:\> scoop install buffalo
 
-After the above steps, to achieve the front-end and back-end interaction, run the following command in terminal:
+- After the above steps, to achieve the front-end and back-end interaction, run the following command in terminal:
     sudo buffalo dev
-
+- The pages that are connected to the backend are the HomePage, Course page, Profile, Track and Login page;
+- Once you have both the frontend and backend running at the same time, through the navigating to http://localhost:3000/signin, you can sign in through a login process with a given user email: japple@wisc.edu and password: 123456
 
 ## Routes
 
