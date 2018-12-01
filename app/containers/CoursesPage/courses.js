@@ -11,12 +11,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const styles = {
-  card: {
-    width: 690,
-    margin: 20,
-  },
   media: {
-    height: 350,
+    height: 500,
   },
 };
 
