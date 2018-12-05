@@ -47,7 +47,7 @@ export default class CoursesPage extends React.PureComponent {
           <div>
             <NavigationBar />
           </div>
-          <Grid container spacing={24}>
+          <Grid container spacing={24} align="center">
             <Grid item xs={12}>
               <Courses
                 name={data.course_1}
@@ -55,14 +55,14 @@ export default class CoursesPage extends React.PureComponent {
                 img={Course1}
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} align="center">
               <Courses
                 name={data.course_2}
                 des={data.course_2_des}
                 img={Course2}
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} align="center">
               <Courses
                 name={data.course_3}
                 des={data.course_3_des}
