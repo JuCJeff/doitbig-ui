@@ -11,8 +11,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import NavigationBar from '../../components/NavigationBar/index';
-import Image from '../../images/nobody_m.original.jpg';
 import Footer from '../../components/Footer';
+import Donald from '../../images/Donald.png';
 import './index.css';
 
 const axios = require('axios');
@@ -55,19 +55,40 @@ export default class ProfilePage extends React.PureComponent {
       return (
         <div className="body">
           <NavigationBar />
-          <img src={Image} alt="profile" width="150px" className="profile" />
 
-          <ul>
-            <li>First Name: {items.FirstName}</li>
-            <li>Last Name: {items.LastName}</li>
-            <li>Email: {items.Email}</li>
-          </ul>
+          <div className="display-container">
+            <div className="display">
+              <img
+                src={Donald}
+                alt="profile"
+                width="150px"
+                className="profile"
+              />
+              <ul className="personal">
+                <li>
+                  First Name: <b>{items.FirstName}</b>
+                </li>
+                <li>
+                  Last Name: <b>{items.LastName}</b>
+                </li>
+                <li>
+                  Email: <b>{items.Email}</b>
+                </li>
+              </ul>
 
-          <ul className="courses">
-            <li># of Courses Taken: 3</li>
-            <li># of Tracks Taken: 1</li>
-            <li>Upcoming course:</li>
-          </ul>
+              <ul className="courses">
+                <li>
+                  # of Courses Taken: <b>3</b>
+                </li>
+                <li>
+                  # of Tracks Taken: <b>1</b>
+                </li>
+                <li>
+                  Upcoming course: <b>CSS 2</b>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div>
             <Footer />
