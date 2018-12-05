@@ -84,10 +84,3 @@ i.fa.fa-instagram{
 i.fa.fa-youtube{
     color: #C4302B;
 }
-
-a.email:hover{
-    text-decoration: underline;
-}
-a.locations:hover{
-    text-decoration: underline;
-}
