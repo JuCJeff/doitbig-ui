@@ -22,7 +22,7 @@ export default class SignInForm extends React.PureComponent {
             </button>
           </div>
           <div className="agreeView">
-            <a href="/signup">Already have an account? Sign up.</a>
+            <a href="/signup">Do not have an account? Sign up.</a>
           </div>
         </form>
       </div>
