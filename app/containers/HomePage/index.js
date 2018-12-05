@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Image from '../../images/STS-Banner.jpg';
+import Image from '../../images/STS-Banner.png';
 import NavigationBar from '../../components/NavigationBar/index';
 import Tracks from './Tracks';
 import Courses from './Courses';
