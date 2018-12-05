@@ -5,6 +5,7 @@ import Courses from './courses';
 import Course1 from '../../images/course1.png';
 import Course2 from '../../images/course2.jpg';
 import Course3 from '../../images/course3.jpg';
+import Footer from '../../components/Footer';
 
 const axios = require('axios');
 const server = axios.create({
@@ -69,6 +70,9 @@ export default class CoursesPage extends React.PureComponent {
               />
             </Grid>
           </Grid>
+          <div>
+            <Footer />
+          </div>
         </div>
       );
     }

@@ -10,9 +10,10 @@
  */
 import PropTypes from 'prop-types';
 import React from 'react';
-import './index.css';
 import NavigationBar from '../../components/NavigationBar/index';
 import Image from '../../images/nobody_m.original.jpg';
+import Footer from '../../components/Footer';
+import './index.css';
 
 const axios = require('axios');
 const qs = require('query-string');
@@ -67,6 +68,10 @@ export default class ProfilePage extends React.PureComponent {
             <li># of Tracks Taken: 1</li>
             <li>Upcoming course:</li>
           </ul>
+
+          <div>
+            <Footer />
+          </div>
         </div>
       );
     }

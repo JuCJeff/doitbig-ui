@@ -4,45 +4,91 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import logo from '../../images/logo.png';
+import './styles.css';
 
 const styles = {
   root: {
     flexGrow: 1,
-    grow: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginLeft: -12,
-      marginRight: 20,
-    },
+  },
+  grow: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginLeft: -12,
+    marginRight: 20,
   },
 };
 
-function SimpleAppBar(props) {
+function ButtonAppBar(props) {
   const { classes } = props;
-
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <meta charSet="utf-8" />
+      <title>Isometric Social Icons</title>
+      <link rel="stylesheet" href="style.css" />
+      <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+      />
+
+      <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            <img src={logo} alt="uw-madison-logo" />
+            <div>
+              <p>CONTACT US:</p>
+              <p>(608)262-5667</p>
+              <p>
+                <a
+                  href="mailto:academictech@doit.wisc.edu"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                  className="email"
+                >
+                  Email
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/maps/place/DeLuca+Biochemistry+Building/"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                  className="locations"
+                >
+                  Locations{' '}
+                </a>
+              </p>
+            </div>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/UWDoIT/">
+                  <i className="fa fa-facebook" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/uwdoit">
+                  <i className="fa fa-twitter" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/school/university-of-wisconsin-madison/">
+                  <i className="fa fa-linkedin" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/uwmadison/">
+                  <i className="fa fa-instagram" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
           </Typography>
-          <Button color="inherit">Instagram</Button>
-          <Button color="inherit">Facebook</Button>
-          <Button color="inherit">Contact Us</Button>
-          <Button color="inherit">About Us</Button>
-          <Button color="inherit">Location</Button>
+          <img src={logo} width="20%" alt="uw-madison-logo" />
         </Toolbar>
       </AppBar>
     </div>
   );
 }
 
-SimpleAppBar.propTypes = {
+ButtonAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SimpleAppBar);
+export default withStyles(styles)(ButtonAppBar);

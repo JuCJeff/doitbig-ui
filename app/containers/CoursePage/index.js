@@ -1,9 +1,10 @@
 import React from 'react';
 import Description from './description';
 import Avatar from './avatar';
-import './index.css';
 import NavigationBar from '../../components/NavigationBar/loadable';
 import Image from '../../images/STS.jpg';
+import Footer from '../../components/Footer';
+import './index.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class CoursePage extends React.PureComponent {
@@ -18,6 +19,9 @@ export default class CoursePage extends React.PureComponent {
           <Description />
         </div>
         <Avatar />
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import School from '@material-ui/icons/School';
 import Navigation from '../../components/NavigationBar/index';
+import Footer from '../../components/Footer';
 import TrackImage1 from '../../images/track1.png';
 import TrackImage2 from '../../images/track2.png';
 import TrackImage3 from '../../images/track3.jpg';
@@ -111,6 +112,9 @@ export default class TracksPage extends React.PureComponent {
             </Button>
           </li>
         </ul>
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }
