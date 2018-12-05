@@ -52,7 +52,7 @@ export default class SignupPage extends React.PureComponent {
                       </p>
 
                       <div className="upBtns text-center">
-                        <button type="submit" className="btn-default">
+                        <button type="submit" className="btn-default" href="/">
                           Sign up
                         </button>
                       </div>

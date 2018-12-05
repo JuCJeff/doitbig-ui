@@ -17,7 +17,7 @@ export default class SignInForm extends React.PureComponent {
             <input type="password" placeholder="Password" name="password" />
           </div>
           <div className="upBtns text-center">
-            <button type="submit" className="btn-default">
+            <button type="submit" className="btn-default" href="/">
               Log in
             </button>
           </div>
