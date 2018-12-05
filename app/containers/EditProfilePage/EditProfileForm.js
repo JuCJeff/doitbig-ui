@@ -25,7 +25,13 @@ export default class EditProfileForm extends React.PureComponent {
           </div>
           <div className="upBtns text-center">
             <button type="submit" className="btn-default">
-              Save Changes
+              <a
+                href="/profile"
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
+                {' '}
+                Save Changes{' '}
+              </a>
             </button>
           </div>
         </form>
