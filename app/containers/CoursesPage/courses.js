@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   media: {
-    height: 500,
+    height: 400,
   },
 };
 
@@ -21,9 +21,17 @@ const server = axios.create({
 });
 
 function MediaCard(props) {
+  const cardStyle = {
+    display: 'block',
+    width: '60vw',
+    transitionDuration: '0.3s',
+    height: '35vw',
+    margin: 10,
+  };
+
   const { classes, name, des, img } = props;
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} style={cardStyle}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
