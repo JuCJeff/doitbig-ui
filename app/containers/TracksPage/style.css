@@ -1,9 +1,9 @@
-ul {
+ul.track-course {
 	padding: 0;
 	display: flex;
 }
 
-ul li {
+ul.track-course li {
 	list-style: none;
 	padding: 10px 20px;
 }

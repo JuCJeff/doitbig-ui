@@ -19,7 +19,7 @@ export default class TracksPage extends React.PureComponent {
         </div>
 
         <h1>Web Developer Track</h1>
-        <ul>
+        <ul className="track-course">
           <li>
             <Button variant="fab">
               <School />
@@ -52,7 +52,7 @@ export default class TracksPage extends React.PureComponent {
         </div>
 
         <h1>Designer Track</h1>
-        <ul>
+        <ul className="track-course">
           <li>
             <Button variant="fab">
               <School />
@@ -85,7 +85,7 @@ export default class TracksPage extends React.PureComponent {
         </div>
 
         <h1>Data Expert Track</h1>
-        <ul>
+        <ul className="track-course">
           <li>
             <Button variant="fab">
               <School />

@@ -57,7 +57,7 @@ function ButtonAppBar(props) {
                 </a>
               </p>
             </div>
-            <ul>
+            <ul className="social-media">
               <li>
                 <a href="https://www.facebook.com/UWDoIT/">
                   <i className="fa fa-facebook" aria-hidden="true" />

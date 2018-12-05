@@ -1,4 +1,4 @@
-.icons{
+ul.drop-down {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -8,12 +8,12 @@
 	transform: translate(-50%, -50%);
 } 
 
-ul li {
+ul.drop-down li {
 	list-style: none;
 	margin: 0 15px;
 }
 
-ul li a {
+ul.drop-down li a {
 	position: relative;
 	display: block;
 	width: 60px;
@@ -27,7 +27,7 @@ ul li a {
 	transition: .5s;
 }
 
-ul li a:before {
+ul.drop-down li a:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -41,12 +41,12 @@ ul li a:before {
 	z-index: -1;
 }
 
-ul li a:hover:before {
+ul.drop-down li a:hover:before {
 	transform: scale(1.1);
 	box-shadow: 0 0 15px #757de8;
 }
 
-ul li a:hover {
+ul.drop-down li a:hover {
 	color: #3f51b5;
 	box-shadow: 0 0 5px #3f51b5;
 	text-shadow: 0 0 5px #3f51b5;

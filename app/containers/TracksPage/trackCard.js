@@ -19,7 +19,7 @@ export default class Tracks extends React.PureComponent {
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             rel="stylesheet"
           />
-          <ul className="icons">
+          <ul className="drop-down">
             <li>
               <a href="/course">
                 <i className="fa fa-graduation-cap" aria-hidden="true" />
