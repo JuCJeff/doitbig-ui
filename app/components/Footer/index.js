@@ -59,23 +59,34 @@ function ButtonAppBar(props) {
             </div>
             <ul className="social-media">
               <li>
-                <a href="https://www.facebook.com/UWDoIT/">
+                <a href="https://www.facebook.com/UWDoIT/" target="_blank">
                   <i className="fa fa-facebook" aria-hidden="true" />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/uwdoit">
+                <a href="https://twitter.com/uwdoit" target="_blank">
                   <i className="fa fa-twitter" aria-hidden="true" />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/school/university-of-wisconsin-madison/">
-                  <i className="fa fa-linkedin" aria-hidden="true" />
+                <a href="https://www.instagram.com/uwdoit/" target="_blank">
+                  <i className="fa fa-instagram" aria-hidden="true" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/uwmadison/">
-                  <i className="fa fa-instagram" aria-hidden="true" />
+                <a
+                  href="https://www.youtube.com/user/uwmadisondoit"
+                  target="_blank"
+                >
+                  <i className="fa fa-youtube" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/uw-madison-division-of-information-technology-doit-/"
+                  target="_blank"
+                >
+                  <i className="fa fa-linkedin" aria-hidden="true" />
                 </a>
               </li>
             </ul>
